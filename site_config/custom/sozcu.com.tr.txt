@@ -1,0 +1,7 @@
+#title: concat(//div[contains(@class, 'content-meta-name')], ' : ', //h1[@class='author-content-title'])
+
+title: concat(//div[contains(@class, 'content-meta-name')], " : ", //h1[contains(@class, 'author-content-title')]/text())
+
+body: //div[contains(@class, 'article-body')]
+
+author: //div[contains(@class, 'content-meta-name')]
