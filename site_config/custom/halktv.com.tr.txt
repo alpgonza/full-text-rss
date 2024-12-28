@@ -1,10 +1,13 @@
 #prune: yes
 #prune_condition: not(//div[contains(@class, 'author-info')])
-
+title: //h3/a
+link: //h3/a/@href
 body: //div[contains(@class, 'content-image') or contains(@class, 'imgc image')] | //div[contains(@class, 'content-description')] | //div[contains(@class, 'article-content')]
 
 author: //div[@class='info']//h1
 author: //p[@class='content-source']//span[@class='t']
+author: //h2/a[@rel="author"]
+date: //span[@class="date"]
 
 find_string: <div class="content-description">
 replace_string: <div class="content-description"><strong>
