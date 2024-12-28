@@ -1,6 +1,6 @@
 #prune: yes
 #prune_condition: not(//div[contains(@class, 'author-info')])
-title: //h3/a
+title: concat(//h2/a[@rel="author"], " : ",//h3/a)
 link: //h3/a/@href
 body: //div[contains(@class, 'content-image') or contains(@class, 'imgc image')] | //div[contains(@class, 'content-description')] | //div[contains(@class, 'article-content')]
 
