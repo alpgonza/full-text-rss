@@ -1,0 +1,14 @@
+body: //section[@data-ga-module="content-body"]
+
+strip: //time/parent::div
+strip: //section[@data-ga-module="content-body"]/article/following-sibling::*
+strip: //img[contains(@src, '/authors/')]/ancestor::div[contains(@class, 'w-full')]/parent::div
+strip: //svg
+strip: //aside
+
+#prevents FTR to load the lifehacker-logo if article has no image
+insert_detected_image: no
+
+prune: no
+
+test_url: https://lifehacker.com/health/how-much-stretching-it-takes-to-make-you-more-flexible

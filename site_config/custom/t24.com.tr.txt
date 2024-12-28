@@ -1,0 +1,7 @@
+body: //div[contains(@class, 'd0FP9')]/h2 | //img[contains(@class, '_3xXvK')] | //div[contains(@class, '_3QVZl')]
+body: //div[contains(@class, '_2teaB')]/h2 | //div[contains(@class, '_1NMxy')]
+
+title: concat(//a[@class='_1SB4i']/h1, " : ", //title)
+
+author: //a[@class='_1SB4i']//h1
+

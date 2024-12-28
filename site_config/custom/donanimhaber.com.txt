@@ -1,0 +1,9 @@
+body: //section[contains(@class, 'surmanset')] | //article[contains(@class, 'post')]
+
+author: //div[@class='isim']/a/text()
+
+strip_id_or_class: kolon mini
+strip: //div[contains(@class, "instagram-feed-carousel owl-carousel")]
+
+#strip_id_or_class: //*[contains(@class, 'kolon') and contains(@class, 'mini')]
+#strip_id_or_class: detay-yatay-sorgu

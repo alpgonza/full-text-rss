@@ -1,0 +1,1 @@
+author: //div[contains(@class, 'kose-yazisi-ust')]//div[contains(@class, 'adi')]

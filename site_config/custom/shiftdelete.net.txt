@@ -1,0 +1,8 @@
+body: //div[contains(@class, 'tdb-sacff-txt')] | //img[contains(@class, 'entry-thumb')] | //div[contains(@class, 'td_block_wrap tdb_single_content')]
+
+strip: //noscript
+
+find_string: <div class="tdb-sacff-txt">
+replace_string: <div class="tdb-sacff-txt"><p>
+find_string: </div>
+replace_string: </p></div>
