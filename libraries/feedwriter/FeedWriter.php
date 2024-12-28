@@ -405,7 +405,7 @@ define('JSONP', 3);
 				{
 					//$attrText .= " $key=\"".htmlspecialchars($value, ENT_COMPAT, 'UTF-8', false)."\" ";
 					// TODO: replace HTML entities not supported in XML with UTF8 equivalent characters
-					$attrText .= " $key=\"".htmlspecialchars($value, ENT_COMPAT, 'UTF-8')."\" ";
+					$attrText .= " $key=\"".htmlspecialchars($value, ENT_QUOTES, 'UTF-8')."\" ";
 				}
 			}
 			$nodeText .= "<{$tagName}{$attrText}>";
@@ -421,9 +421,15 @@ define('JSONP', 3);
 				//$nodeText .= (in_array($tagName, $this->CDATAEncoding))? $tagContent : htmlentities($tagContent);
 				//$nodeText .= htmlspecialchars($tagContent, ENT_COMPAT, 'UTF-8', false);
 				// TODO: replace HTML entities not supported in XML with UTF8 equivalent characters
-				$nodeText .= htmlspecialchars($tagContent, ENT_COMPAT, 'UTF-8');
-			}           
+			//	$nodeText .= htmlspecialchars($tagContent, ENT_COMPAT, 'UTF-8');
+			}
 			//$nodeText .= (in_array($tagName, $this->CDATAEncoding))? "]]></$tagName>" : "</$tagName>";
+				$decodedContent = str_replace('&amp;', '&', $tagContent);
+				// Then decode all HTML entities
+				$decodedContent = html_entity_decode($decodedContent, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+				// Finally, encode for XML output
+				$nodeText .= htmlspecialchars($decodedContent, ENT_QUOTES, 'UTF-8');
+			}           
 			$nodeText .= "</$tagName>";
 			return $nodeText . PHP_EOL;
 		}
