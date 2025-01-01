@@ -1,5 +1,0 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' article-content ')]
-
-prune: no
-
-test_url: https://radishzz.cc/posts/384776b2/

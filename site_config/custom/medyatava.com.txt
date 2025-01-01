@@ -1,0 +1,5 @@
+#body: //div[contains(@class, 'mb-3 content-header')]//h2 | //div[@class='content-text'] or //article[contains(@class, 'infinity-item')]
+
+body: ///div[contains(@class, 'content-header')]//h2 | //div[contains(@class, 'content-text')] | //div[contains(@class, 'infinity-container')]
+
+#date: //time[@class='pubdate']/@datetime

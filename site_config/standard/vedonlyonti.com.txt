@@ -1,3 +1,0 @@
-strip: //style
-
-test_url: https://vedonlyonti.com/veikkausvihjeet/pitkavetovihjeet/nba-boston-celtics-cleveland-cavaliers-8-5-2024

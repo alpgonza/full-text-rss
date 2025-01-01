@@ -197,7 +197,7 @@ $options->detect_language = 'user';
 // ---------------
 // If enabled, a user can submit site config rules directly in the request
 // using the siteconfig request parameter. Disabled (false) by default.
-$options->user_submitted_config = false;
+$options->user_submitted_config = true;
 
 // Remove items identified as native ads?
 // ---------------

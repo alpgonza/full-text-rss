@@ -1,4 +1,0 @@
-strip: //div[@id="extras"]
-strip: //div[@class="herald-da"]
-
-test_url: https://www.domo-blog.fr/economisez-energie-argent-avec-domotique-chauffe-eau-shelly-1-pro/

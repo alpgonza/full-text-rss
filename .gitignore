@@ -1,0 +1,5 @@
+cache/rss/*
+cache/rss-with-key/*
+!cache/index.php
+!cache/rss/index.php
+!cache/rss-with-key/index.php

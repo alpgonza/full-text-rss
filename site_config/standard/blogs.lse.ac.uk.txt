@@ -1,3 +1,0 @@
-http_header(user-agent): PHP/8.3
-
-test_url: https://blogs.lse.ac.uk/politicsandpolicy/stop-working-on-increasing-road-safety/
