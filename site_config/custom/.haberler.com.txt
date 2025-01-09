@@ -1,0 +1,2 @@
+#body: //h2[@class='description'] | //div[@id='video_div'] | //main[contains(@class, 'haber_metni')]
+body: //header[@class='hbptHead'] | //main[contains(@class, 'haber_metni')]

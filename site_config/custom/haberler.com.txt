@@ -1,0 +1,1 @@
+body: //h2[@class= 'description']  | //main[contains(@class, 'haber_metni')]

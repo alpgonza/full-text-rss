@@ -1,0 +1,1 @@
+strip: //figure[starts-with(@class, 'wp-block-image')]
